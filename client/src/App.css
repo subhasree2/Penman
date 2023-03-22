@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.App {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Posts, .myposts {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.post, .myposts .content {
+  width: 26%;
+  height: 300px;
+  text-align: justify;
+  border-radius: 15px;
+  margin: 8px;
+  padding: 20px;
+  padding-bottom: 20px;
+  background-color: #20123A;
+  color: white;
+  line-height: 25px;
+  display: inline-grid;
+}
+
+.post .title, .myposts .content .title {
+  font-size: 30px;
+  color: #ab86fc;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-variant: small-caps;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.post .footer {
+  font-variant: inherit;
+  font-size: 17px;
+  cursor: pointer;
+  color: #F4B4E3;
+  margin-bottom: 10px;
+}
+
+.post .footer a {
+  color: #F4B4E3;
+  text-decoration: none;
+}
+
+.PostsPage .Title, .createPostPage .title, .MyPostsPage h1, .DetailsContent h1 {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 2.5em;
+  letter-spacing: 10px;
+  background-image: linear-gradient(-225deg,
+      #1D221C 10%,
+      #44107a 10%,
+      #ff1361 87%,
+      #fff800 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
+.MyPostsPage h1 {
+  font-weight: bolder;
+  font-size: 3.25em;
+}
+
+.post .body, .myposts .content .body {
+  margin-bottom: 10px;
+  /* Limit the text content to be 5 lines, after that ... */
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.post .body span , .post .body strong{
+  color: white;
+  background-color: dimgray;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.post .body h1, .myposts .content .body h1 {
+  letter-spacing: 0.5px;
+  font-size: larger;
+}
+
+.body::first-letter {
+  font-weight: bolder;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.Navbar {
+  padding-right: 20px;
+  height: 50px;
+  margin-left: 2%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Navbar span {
+  background: linear-gradient(-225deg, #FF3CAC -35%, #562B7C 55%);
+  font-weight: bolder;
+  margin-right: 10px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 20px;
+}
+
+.Navbar span a {
+  text-decoration: none;
+  color: white;
+}
+
+.post button, .myposts .content button {
+  margin: 20px;
+  border: none;
+  font-weight: bolder;
+  padding: 8px;
+  background-color: white;
+  color: black;
+  width: 40%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.post .icons i, .myposts .content i{
+  margin-left: 20%;
+  margin-right: 2%;
+  cursor: pointer;
+}
+
+.formContainer, .DetailsContainer {
+  color: #44107a;
+  font-size: 18px;
+  color: black;
+  letter-spacing: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.formContainer label, .DetailsContainer label {
+  font-variant: small-caps;
+  font-weight: bolder;
+}
+
+#inputCreatePost, #location, #Link {
+  height: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#TextCreatePost, #description, .markedit textarea, .preview{
+  margin-top: 10px;
+  padding-top: 12px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  resize: none;
+  margin-bottom: 10px;
+  min-height: 350px;
+}
+
+.markedit textarea, .markedit .preview {
+  width: 50%;
+}
+
+.preview {
+  letter-spacing: 1px;
+}
+
+.textedit .preview {
+  min-height: 100px;
+}
+
+.markedit {
+  display: flex;
+  justify-content: space-between;
+}
+
+#description {
+  min-height: 100px;
+}
+
+.quill {
+  letter-spacing: normal;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.ql-editor.ql-blank {
+  border: none;
+  width: 50%;
+  letter-spacing: normal;
+  min-height: 100px;
+}
+
+.createPostPage button, .DetailsContent button {
+  margin-top: 30px;
+  background: linear-gradient(-225deg, #FF3CAC -35%, #562B7C 55%);
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  margin-left: auto;
+  cursor: pointer;
+  margin-right: auto;
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+}
+
+.editor {
+  background: linear-gradient(-225deg, #FF3CAC -35%, #562B7C 55%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.Container button {
+  background: linear-gradient(-225deg, #FF3CAC -35%, #562B7C 55%);
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  width: 20%;
+  height: 40px;
+  margin-top: 5%;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 6px;
+  border: none;
+}
+
+.PostPage {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+.PostPage .PostTitle {
+  background-image: linear-gradient(-225deg,
+      #44107a 10%,
+      #ff1361 30%,
+      #fff800 100%);
+  margin-top: 10px;
+  letter-spacing: 10px;
+  font-variant: small-caps;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.PostPage .PostAuthor {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.PostPage .PostBody {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: justify;
+}
+
+.PostBody img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PostPage hr {
+  margin-top: 20px;
+}
+
+.postContent button {
+  margin-right: 12px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border : none;
+  margin-top: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.postContent .icons {
+  display: flex;
+  margin-left: 77%;
+  flex-direction: row;
+}
+
+.postContent i {
+  margin-right: 5px;
+}
+
+.postContent .icons .Edit {
+  background-color: blueviolet;
+}
+
+.Editor {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
+}
+
+.Editor .ql-editor.ql-blank {
+  min-height: 450px;
+}
+
+.AddPosts {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5%;
+}
+
+.AddPosts span {
+  margin-top: 10px;
+}
+
+.ql-snow .ql-editor pre.ql-syntax {
+  background-color: #23241f; /* <== change this color */ 
+  color: #f8f8f2;
+  overflow: visible;
+}
+
+/*Fonts in editor*/
+.ql-picker.ql-font .ql-picker-label[data-value="Roboto"]::before,.ql-picker.ql-font .ql-picker-item[data-value="Roboto"]::before {
+  font-family: "Roboto", cursive;;
+  content: "Roboto" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Raleway"]::before,.ql-picker.ql-font .ql-picker-item[data-value="Raleway"]::before {
+  font-family: "Raleway", cursive;;
+  content: "Raleway" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Montserrat"]::before,.ql-picker.ql-font .ql-picker-item[data-value="Montserrat"]::before {
+  font-family: "Montserrat", cursive;;
+  content: "Montserrat" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Lato"]::before,.ql-picker.ql-font .ql-picker-item[data-value="Lato"]::before {
+  font-family: "Lato", cursive;;
+  content: "Lato" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Rubik"]::before,.ql-picker.ql-font .ql-picker-item[data-value="Rubik"]::before {
+  font-family: "Rubik", cursive;;
+  content: "Rubik" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Sans-Serif"]::before,.ql-picker.ql-font .ql-picker-item[data-value="Sans-Serif"]::before {
+  font-family: sans-serif, cursive;
+  content: "Sans-Serif" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Times New Roman"]::before,.ql-picker.ql-font .ql-picker-item[data-value="Times New Roman"]::before {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  content: "Times New Roman" !important;
+}
+
+/* Set content font-families */
+.ql-font-Roboto {
+  font-family: "Roboto";
+}
+
+.ql-font-Raleway {
+  font-family: "Raleway";
+}
+
+.ql-font-Montserrat {
+  font-family: "Montserrat";
+}
+
+.ql-font-Lato {
+  font-family: "Lato";
+}
+
+.ql-font-Rubik {
+  font-family: "Rubik";
+}
+
+.ql-font-Sans-Serif {
+  font-family: sans-serif;
+}
+
+.ql-font-Times-New-Roman {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Comments h1 {
+  background-image: linear-gradient(-225deg,
+      #44107a 30%,
+      #ff1361 30%,
+      #fff800 100%);
+  letter-spacing: 5px;
+  font-variant: small-caps;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Comments form textarea {
+  display: block;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  width: 95%;
+  height: 50px;
+  resize: none;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.Comments form input {
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  width: 95%;
+  padding: 10px;
+}
+
+.Comments form button {
+  padding: 10px;
+  padding-left: 60px;
+  cursor: pointer;
+  padding-right: 60px;
+  margin-top: 10px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  position: relative;
+  margin-left: 82.5%;
+  background: linear-gradient(-225deg, #FF3CAC -35%, #562B7C 55%);
+}
+
+.ShowComment {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.Comment {
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-image: linear-gradient(-225deg,
+      #44107a 10%,
+      #ff1361 150%);
+  margin-bottom: 10px;
+}
+
+.Comment .Commentuser {
+  letter-spacing: 1px;
+  font-size: 23px;
+  font-weight: bolder;
+  color: white;
+  font-variant: small-caps;
+}
+
+.Commentbody {
+  color: white;
+  font-weight: 500;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  margin-left: 50px;
+  text-align: justify;
+}
+
+.Comment i {
+  font-size: 1.25em;
+  color: white;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.Register,.Login, .Changepwd {
+  margin-left: 9%;
+  background-image: linear-gradient(-225deg,
+      #1D221C 10%,
+      #44107a 10%,
+      #ff1361 87%);
+  margin-right: 9%;
+  margin-top: 6%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.Register input,.Login input, .Changepwd input {
+  border: none;
+  color: black;
+  width: 80%;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.Register label,.Login label, .Changepwd label {
+  color: white;
+  font-size: 18px;
+}
+
+.RegImg img {
+  width: 500px;
+  height: 500px;
+}
+
+.LogImg img {
+  width: 550px;
+  height: 500px;
+}
+
+.PwdImg img {
+  width: 550px;
+  height: 500px;
+}
+
+.RegContent h1,.Login h1, .Changepwd h1 {
+  color: white;
+  font-size: 3em;
+  background-clip: text;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
+
+.RegContent button,.Login button, .Changepwd button {
+  width: 85%;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background: #562B7C;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.RegContent,.LoginContent, .ChangePwdContent {
+  margin-top: -5%;
+  padding-left: 10%;
+  width: 50%;
+}
+
+.RegContainer div {
+  color: white;
+  margin-top: 4%;
+  font-size: 1.2em;
+  margin-left: 6%;
+}
+
+.LoginContainer div, .PwdContainer div {
+  color: white;
+  font-size: 1.2em;
+  margin-top: 4%;
+  margin-left: 15%;
+}
+
+.RegContainer div a, .LoginContainer div a, .PwdContainer div a {
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+}
+
+.Navbar i {
+  margin-left: 10px;
+  background-image: linear-gradient(-225deg,
+      #1D221C 10%,
+      #44107a 10%,
+      #ff1361 87%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.Notfound {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Error {
+  font-size: 15em;
+  font-weight: bolder;
+  background-image: linear-gradient(-225deg,
+      #1D221C 10%,
+      #44107a 10%,
+      #ff1361 87%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Notfound .content {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color:  #44107a;
+  color: white;
+}
+
+.Notfound .contentii, .Notfound div {
+  margin-top: 1%;
+  font-size: 1.75em;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Notfound div {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Notfound a {
+  background-image: linear-gradient(-225deg,
+      #1D221C 10%,
+      #44107a 10%,
+      #ff1361 87%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Profile {
+  background-color: #cfb8ff;
+  margin: 30px;
+}
+
+.Profile .userDesc {
+  padding: 2%;
+  display: flex;
+  margin-top: 2%;
+  align-items: center;
+  justify-content: center;
+  background-color: #20123A;
+  color: white;
+}
+
+.Profile i{
+  color: white;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.Profile i.bi-person{
+  font-size: 6em;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.Desc div {
+  display: flex;
+  font-size: 1.25em;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.Desc a {
+  color: white;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+.Image {
+  margin-right: 5%;
+}
+
+.Desc .Name {
+  color :#ab86fc ;
+  font-size: 1.75em;
+  font-weight: bolder;
+}
+
+.Desc .details {
+  font-size: 1.25em;
+}
+
+.additional {
+  width: 30%;
+  font-size: 1.2em;
+  margin-left: 100px;
+  background-color: #7337f5;
+  padding: 2%;
+  text-align: center;
+}
+
+.additional div {
+  margin-top: 10px;
+}
+
+.additional a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: large;
+  letter-spacing: 2px;
+  font-family: math;
+}
+
+.Profile .Posts {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.Profile h1 {
+  text-align: center;
+  color: #44107a;
+  text-transform: capitalize;
+}
+
+.additional button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #44107a;
+  border: none;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}

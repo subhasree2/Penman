@@ -12,7 +12,7 @@ Penman is a site to create, read, update and delete blogs. It allows the users t
 
       git clone https://github.com/subhasree2/Penman.git
 - Open two terminals each for client and the server in your code editor (Example : VS Code)
-- Set up Nodejs , Expressjs and openai
+- Set up Nodejs , Expressjs and mysql in server
 
         npm install
         npm install express 

@@ -56,3 +56,25 @@ Penman is a site to create, read, update and delete blogs. It allows the users t
   },
 ```
 - All the required tables will be automatically created by the sequelize orm.
+---
+
+### Images :
+| ![Home.jpg](https://user-images.githubusercontent.com/75073682/226891596-d074beb2-24dc-488e-9694-5b831d9042a8.png) | 
+|:--:| 
+| *Home page* |
+
+| ![TextEdit.jpg](https://user-images.githubusercontent.com/75073682/226890352-e8922bf9-0f06-4c5c-a65f-04be144d80c9.png) | 
+|:--:| 
+| *Text Editor* |
+
+| ![Markdown.jpg](https://user-images.githubusercontent.com/75073682/226890675-8df814b8-a9ac-4cfe-9d91-d295a6bc3cb5.png) | 
+|:--:| 
+| *Markdown Editor* |
+
+| ![Post.jpg](https://user-images.githubusercontent.com/75073682/226892579-d58f3a19-5c4d-4a3f-af86-9e8028e0b139.png) | 
+|:--:| 
+| *View Post* |
+
+| ![profile.jpg](https://user-images.githubusercontent.com/75073682/226893535-ccc329d1-7130-4db7-9135-ee7b5e5dccd7.png) | 
+|:--:| 
+| *Profile* |

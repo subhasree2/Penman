@@ -3,15 +3,23 @@ Penman is a site to create, read, update and delete blogs. It allows the users t
 
 > **The art of writing is the art of discovering what you believe**
 ---
-
 ## Technology Stack :
     React, Nodejs, Expressjs, MySQL, Sequelize 
-
 ## State Management :
     UseContext Hook
 ---
+## Features :
+- Writer can create the blog with two options,
+    - Text Editor 
+    - Markdown Editor
+- Seperate public profile page for each user along with their posted blogs.
+- User can see the posts liked by them in a seperate page.
+- Authentication is implemented with bcrypt, json web token and sessionStorage.
+- Additionally, Like and Comment sections are provided.
 
-## Working of this project :
+---
+
+### Working of this project :
 - Clone this repository in your local machine 
 
       git clone https://github.com/subhasree2/Penman.git
@@ -48,14 +56,3 @@ Penman is a site to create, read, update and delete blogs. It allows the users t
   },
 ```
 - All the required tables will be automatically created by the sequelize orm.
-
----
-
-### Features :
-- Writer can create the blog with two options,
-    - Text Editor 
-    - Markdown Editor
-- Seperate public profile page for each user along with their posted blogs.
-- User can see the posts liked by them in a seperate page.
-- Authentication is implemented with bcrypt, json web token and sessionStorage.
-- Additionally, Like and Comment sections are provided.

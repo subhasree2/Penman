@@ -6,7 +6,7 @@ Penman is a site to create, read, update and delete blogs. It allows the users t
 ## Technology Stack :
     React, Nodejs, Expressjs, MySQL, Sequelize 
 ## State Management :
-    UseContext Hook
+    Context API
 ### Deployment Link :   <a>https://penman.vercel.app</a>
 ---
 ## Features :

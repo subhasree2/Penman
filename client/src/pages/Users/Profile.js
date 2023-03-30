@@ -42,7 +42,7 @@ function Profile() {
                     <div className="additional">
                         <div className="Date">Joined on {d.toDateString()}</div>
                         <div>Location : {details.location}</div>
-                        {details.Link !== "" && <Link to={details.Link}><div>To know about me : {details.Link}</div></Link>}
+                        {details.Link !== "" && <a href={"https://" + details.Link}>To know about me : {details.Link}</a>}
                         {basicInfo.id === authStatus.id && <button><Link to="/changepwd"><i class="bi bi-key-fill"></i>Change Password</Link></button>}
                     </div>
                 </div>
